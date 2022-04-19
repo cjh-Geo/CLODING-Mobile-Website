@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+* {
+    font-family: "PT Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #58cc02;
+}
+
+.topFiller {
+    height: 7vh;
+  }
+  .bottomFiller {
+    height: 8vh;
+  }
+
+.nav {
+    background: #e7e7e7;
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    bottom: 0;
+}
+.navGrid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "chats home profile";
+}
+
+#chats {
+    grid-area: chats;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "chatsIcon"
+        "chatsWord";
+    align-items: center;
+    justify-content: center;
+  }
+  #chatsIcon {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -25%;
+    grid-area: chatsIcon;
+  }
+  .chatsWord {
+    font-size: 0.75rem;
+    grid-area: chatsWord;
+  }
+  
+  #home {
+    grid-area: home;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "homeIcon"
+      "homeWord";
+    align-items: center;
+    justify-content: center;
+  }
+  #homeIcon {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -25%;
+    grid-area: homeIcon;
+  }
+  .homeWord {
+    font-size: 0.75rem;
+    grid-area: homeWord;
+  }
+  
+  #profile {
+    grid-area: profile;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+      "profileIcon"
+      "profileWord";
+    align-items: center;
+    justify-content: center;
+  }
+  #profileIcon {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -25%;
+    grid-area: profileIcon;
+  }
+  .profileWord {
+    font-size: 0.75rem;
+    grid-area: profileWord;
+  }
+
+
+.searchArea {
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    background-color: #e0e0e0;
+    border-bottom: 1.5px solid #c0c0c0;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+  }
+  .searchbar {
+    width: 60%;
+    height: 70%;
+    background: #f0f0f0;
+    border-radius: 10px;
+    border: 3px solid #58cc02;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+  }
+  .magGlass {
+    width: 1.7rem;
+  }
+  .searchBtn {
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+  }
+  .searchbox {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 80%;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+
+.leoLink {
+  width: 100vw;
+  height: 120px;
+  display: block;
+  margin: 5px;
+  border-bottom: 3px solid #c0c0c0;
+}
+.leoPfp {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+  float: left;
+}
+.leo {
+  display: inline-block;
+  font-size: 2rem;
+  color: black;
+  padding: 5px 15px;
+}
+
+.jorjLink {
+  width: 100vw;
+  height: 120px;
+  display: block;
+  margin: 5px;
+  border-bottom: 3px solid #c0c0c0;
+}
+.jorjPfp {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 100px;
+  float: left;
+}
+.jorj {
+  display: inline-block;
+  font-size: 2rem;
+  color: black;
+  padding: 5px 15px;
+}
